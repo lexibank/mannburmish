@@ -1,0 +1,50 @@
+{
+    "title": "CLDF dataset derived from Mann's \"Phonological Reconstruction of Proto Northern Burmic\" from 1998",
+    "access_right": "open",
+    "keywords": [
+        "cldf:Wordlist",
+        "linguistics"
+    ],
+    "creators": [
+        {
+            "name": "Johann-Mattis List"
+        },
+        {
+            "name": "Nathan W. Hill"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Noel Walter Mann",
+            "type": "DataCollector"
+        }
+    ],
+    "communities": [
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        }
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Mann, Noel W. 1998. A phonological reconstruction of Proto Northern Burmic. (PhD Thesis).</p>\n</blockquote>"
+}
