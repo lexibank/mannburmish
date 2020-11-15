@@ -1,8 +1,8 @@
-ID	Name	Glottocode	Glottolog_Name	ISO639P3code	Macroarea	Longitude	Latitude	Family	SubGroup
-Achang	Achang	acha1249				97.8333	24.25	Sino-Tibetan	Burmish
-Bela	Bela	pela1242				98.6	24.45	Sino-Tibetan	Burmish
-Lashi	Lashi	lash1243				98.6	24.45	Sino-Tibetan	Burmish
-Maru	Maru	maru1249				98.6	24.45	Sino-Tibetan	Burmish
-Phon	Phon	hpon1238				97.3544031	25.3248194	Sino-Tibetan	Burmish
-WrittenBurmese	Written_Burmese	oldb1235				94.90	21.16	Sino-Tibetan	Burmish
-Zaiwa	Zaiwa	zaiw1241				98.6	24.45	Sino-Tibetan	Burmish
+ID	Name	Glottocode	Macroarea	Longitude	Latitude	Family	SubGroup
+Achang	Achang	acha1249	Eurasia	97.8333	24.25	Sino-Tibetan	Burmish
+Bela	Bela	pela1242	Eurasia	98.6	24.45	Sino-Tibetan	Burmish
+Lashi	Lashi	lash1243	Eurasia	98.6	24.45	Sino-Tibetan	Burmish
+Maru	Maru	maru1249	Eurasia	98.6	24.45	Sino-Tibetan	Burmish
+Phon	Phon	hpon1238	Eurasia	97.3544031	25.3248194	Sino-Tibetan	Burmish
+WrittenBurmese	Written_Burmese	oldb1235	Eurasia	94.90	21.16	Sino-Tibetan	Burmish
+Zaiwa	Zaiwa	zaiw1241	Eurasia	98.6	24.45	Sino-Tibetan	Burmish

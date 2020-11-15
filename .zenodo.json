@@ -7,40 +7,24 @@
     ],
     "creators": [
         {
-            "name": "Johann-Mattis List"
-        },
-        {
-            "name": "Nathan W. Hill"
+            "name": "Noel Walter Mann"
         }
     ],
     "contributors": [
+        {
+            "name": "Johann-Mattis List",
+            "type": "Other"
+        },
+        {
+            "name": "Nathan W. Hill",
+            "type": "Other"
+        },
         {
             "name": "Noel Walter Mann",
             "type": "DataCollector"
         }
     ],
     "communities": [
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
         {
             "identifier": "lexibank"
         }
