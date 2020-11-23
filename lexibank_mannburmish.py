@@ -67,27 +67,27 @@ class Dataset(BaseDataset):
                     number = row['Mann_number'][:-1]
                     words[lid, number] += [(row[language], row['Mann_number'],
                         str(i+1))]
-        args.writer['FormTable', 'Segments'].separator = ' + '
-        args.writer['FormTable', 'Segments'].datatype = Datatype.fromvalue(
-                {'base': 'string', 'format': "([\\S]+)( [\\S]+)*"})
+        #args.writer['FormTable', 'Segments'].separator = ' '
+        #args.writer['FormTable', 'Segments'].datatype = Datatype.fromvalue(
+        #        {'base': 'string', 'format': "([\\S]+)( [\\S]+)*"})
 
         for (language, number), values in words.items():
             value = ' '.join([x[0] for x in values])
             cogids = [x[1] for x in values]
             locids = '-'.join([x[2] for x in values])
 
-            lexemes = args.writer.add_forms_from_value(
+            lexeme = args.writer.add_form(
                     Language_ID=language,
                     Parameter_ID=concepts[str(int(number))],
                     Local_ID='{0}-{1}'.format(language, locids),
                     Value=value,
+                    Form=self.lexemes.get(value, value),
                     Source=['Mann1998']
                     )
-            for lex in lexemes:
-                for i, cogid in enumerate(cogids):
-                    args.writer.add_cognate(
-                            lexeme=lex,
-                            Cognateset_ID=cogid,
-                            Segment_Slice=i+1,
-                            Source='Mann1998')
+            for i, cogid in enumerate(cogids):
+                args.writer.add_cognate(
+                        lexeme=lexeme,
+                        Cognateset_ID=cogid,
+                        Segment_Slice=i+1,
+                        Source='Mann1998')
 
