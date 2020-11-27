@@ -1,4 +1,4 @@
-ID,Form_ID,Form,Cognateset_ID,Doubt,Cognate_Detection_Method,Source,Alignment,Alignment_Method,Alignment_Source,Segment_Slice
+ID,Form_ID,Form,Cognateset_ID,Doubt,Cognate_Detection_Method,Source,Alignment,Alignment_Method,Alignment_Source,Morpheme_Index
 Achang-1_sky-1-1,Achang-1_sky-1,mau³⁴ kʰoŋ³²,001a,false,expert,Mann1998,,,,1
 Achang-1_sky-1-2,Achang-1_sky-1,mau³⁴ kʰoŋ³²,001b,false,expert,Mann1998,,,,2
 Bela-1_sky-1-1,Bela-1_sky-1,mau⁵²,001a,false,expert,Mann1998,,,,1

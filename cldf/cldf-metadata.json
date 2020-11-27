@@ -8,7 +8,7 @@
     ],
     "dc:identifier": "https://zenodo.org/record/3759030",
     "dc:isVersionOf": null,
-    "dc:license": "CCBY-NC",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
     "dc:title": "CLDF dataset derived from Mann's \"Phonological Reconstruction of Proto Northern Burmic\" from 1998",
@@ -18,7 +18,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/lexibank/mannburmish",
-            "dc:created": "1a09605"
+            "dc:created": "aface5a"
         },
         {
             "rdf:type": "prov:Entity",
@@ -36,13 +36,13 @@
             "rdf:type": "prov:Entity",
             "dc:title": "CLTS",
             "rdf:about": "https://github.com/cldf-clts/clts/",
-            "dc:created": "v1.4-78-g54b0f66"
+            "dc:created": "v1.4-111-gcfb1db5"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.8.6"
+            "dc:description": "3.6.12"
         },
         {
             "dc:title": "python-packages",
@@ -320,7 +320,7 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "Segment_Slice"
+                        "name": "Morpheme_Index"
                     }
                 ],
                 "foreignKeys": [

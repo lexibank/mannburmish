@@ -17,7 +17,7 @@ class CustomConcept(Concept):
 
 @attr.s
 class CustomCognate(Cognate):
-    Segment_Slice = attr.ib(default=None)
+    Morpheme_Index = attr.ib(default=None)
 
 
 @attr.s
@@ -67,9 +67,6 @@ class Dataset(BaseDataset):
                     number = row['Mann_number'][:-1]
                     words[lid, number] += [(row[language], row['Mann_number'],
                         str(i+1))]
-        #args.writer['FormTable', 'Segments'].separator = ' '
-        #args.writer['FormTable', 'Segments'].datatype = Datatype.fromvalue(
-        #        {'base': 'string', 'format': "([\\S]+)( [\\S]+)*"})
 
         for (language, number), values in words.items():
             value = ' '.join([x[0] for x in values])
@@ -88,6 +85,6 @@ class Dataset(BaseDataset):
                 args.writer.add_cognate(
                         lexeme=lexeme,
                         Cognateset_ID=cogid,
-                        Segment_Slice=i+1,
+                        Morpheme_Index=i+1,
                         Source='Mann1998')
 
