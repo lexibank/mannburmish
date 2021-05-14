@@ -4,7 +4,7 @@ Cite the source dataset as
 
 > Mann, Noel W. 1998. A phonological reconstruction of Proto Northern Burmic. (PhD Thesis).
 
-This dataset is licensed under a CCBY-NC license
+This dataset is licensed under a CC-BY-4.0 license
 
 Available online at https://zenodo.org/record/3759030
 
