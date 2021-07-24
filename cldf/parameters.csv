@@ -59,7 +59,7 @@ ID,Name,Concepticon_ID,Concepticon_Gloss,Number
 58_papaya,papaya,2445,PAPAYA,58
 61_coconut,coconut,970,COCONUT,61
 62_eggplant,eggplant,1146,AUBERGINE,62
-63_peanut,peanut,2364,PEANUT,63
+63_peanut,peanut,595,GROUNDNUT (PEANUT),63
 64_ginger,ginger,2500,GINGER,64
 65_garlic,garlic,2368,GARLIC,65
 66_redpepper,red pepper,919,CHILI PEPPER,66
@@ -254,7 +254,7 @@ ID,Name,Concepticon_ID,Concepticon_Gloss,Number
 263_dream,dream,1920,DREAM (SOMETHING),263
 264_painful,painful,1129,PAINFUL,264
 265_medicine,medicine,1372,MEDICINE,265
-266_itch,itch,148,ITCH,266
+266_itch,itch,3855,ITCH (CAUSE ITCHING OR FEEL ITCHY),266
 267_scratch,scratch,1436,SCRATCH,267
 268_shiver,shiver,52,SHIVER,268
 269_die,die,1494,DIE,269
@@ -304,7 +304,7 @@ ID,Name,Concepticon_ID,Concepticon_Gloss,Number
 314_hunt,hunt,1435,HUNT,314
 315_kill,kill,1417,KILL,315
 316_fight,fight,1423,FIGHT,316
-317_but,but,,,317
+317_but,but,3843,BUT,317
 318_sell,sell,1571,SELL,318
 319_exchange,exchange,2509,EXCHANGE,319
 320_pay,pay,718,PAY,320
