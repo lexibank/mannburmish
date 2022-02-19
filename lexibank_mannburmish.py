@@ -72,6 +72,7 @@ class Dataset(pylexibank.Dataset):
                 Value=value,
                 Form=self.lexemes.get(value, value),
                 Source=["Mann1998"],
+                Cognacy=" ".join([str(x) for x in cogids])
             )
             for i, cogid in enumerate(cogids):
                 args.writer.add_cognate(
