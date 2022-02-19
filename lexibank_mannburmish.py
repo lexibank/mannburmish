@@ -59,11 +59,21 @@ class Dataset(pylexibank.Dataset):
                 if row[language].strip():
                     number = row["Mann_number"][:-1]
                     words[lid, number] += [(row[language], row["Mann_number"], str(i + 1))]
-
+        
+        C, maxid = {}, 1
         for (language, number), values in words.items():
             value = " ".join([x[0] for x in values])
             cogids = [x[1] for x in values]
             locids = "-".join([x[2] for x in values])
+            cogidxs = []
+            for cogid in cogids:
+                if cogid not in C:
+                    cogidx = maxid
+                    C[cogid] = maxid
+                    maxid += 1
+                else:
+                    cogidx = C[cogid]
+                cogidxs += [cogidx]
 
             lexeme = args.writer.add_form(
                 Language_ID=language,
@@ -72,9 +82,9 @@ class Dataset(pylexibank.Dataset):
                 Value=value,
                 Form=self.lexemes.get(value, value),
                 Source=["Mann1998"],
-                Cognacy=" ".join([str(x) for x in cogids])
+                Cognacy=" ".join([str(x) for x in cogidxs])
             )
-            for i, cogid in enumerate(cogids):
+            for i, cogid in zip(cogidxs, cogids):
                 args.writer.add_cognate(
-                    lexeme=lexeme, Cognateset_ID=cogid, Morpheme_Index=i + 1, Source="Mann1998"
+                    lexeme=lexeme, Cognateset_ID=cogid, Morpheme_Index=i, Source="Mann1998"
                 )
