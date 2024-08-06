@@ -35,8 +35,8 @@ This dataset was originally digitized by Nathan W. Hill, and then later converte
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 7
-- **Concepts:** 391
+- **Varieties:** 7 (linked to 7 different Glottocodes)
+- **Concepts:** 391 (linked to 388 different Concepticon concept sets)
 - **Lexemes:** 2,076
 - **Sources:** 1
 - **Synonymy:** 1.00
@@ -44,16 +44,16 @@ This dataset was originally digitized by Nathan W. Hill, and then later converte
 - **Cognate Diversity:** 0.11
 - **Invalid lexemes:** 0
 - **Tokens:** 9,468
-- **Segments:** 141 (0 BIPA errors, 0 CTLS sound class errors, 141 CLTS modified)
+- **Segments:** 141 (0 BIPA errors, 0 CLTS sound class errors, 141 CLTS modified)
 - **Inventory size (avg):** 66.14
 
 # Contributors
 
 Name | GitHub user | Description | Role
 --- | --- | --- | ---
-Johann-Mattis List | @LinguList | maintainer | Other
+Johann-Mattis List | @LinguList | maintainer | Editor
 Nathan W. Hill | @nw36 | digitization | Other
-Noel Walter Mann | | data collector | DataCollector, Author
+Noel Walter Mann | | data collector | Author, DataCollector
 
 
 
