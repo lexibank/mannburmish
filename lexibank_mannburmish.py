@@ -27,6 +27,8 @@ class CustomLanguage(pylexibank.Language):
 class Dataset(pylexibank.Dataset):
     dir = Path(__file__).parent
     id = "mannburmish"
+    writer_options = dict(keep_languages=False, keep_parameters=False)
+
     language_class = CustomLanguage
     concept_class = CustomConcept
     cognate_class = CustomCognate
@@ -34,7 +36,6 @@ class Dataset(pylexibank.Dataset):
     def cmd_makecldf(self, args):
         args.writer.add_sources()
 
-        # TODO: add concepts with `add_concepts`
         concepts = {}
         for concept in self.conceptlists[0].concepts.values():
             idx = concept.id.split("-")[-1] + "_" + slug(concept.english)
@@ -59,7 +60,7 @@ class Dataset(pylexibank.Dataset):
                 if row[language].strip():
                     number = row["Mann_number"][:-1]
                     words[lid, number] += [(row[language], row["Mann_number"], str(i + 1))]
-        
+
         C, maxid = {}, 1
         for (language, number), values in words.items():
             value = " ".join([x[0] for x in values])
@@ -82,7 +83,7 @@ class Dataset(pylexibank.Dataset):
                 Value=value,
                 Form=self.lexemes.get(value, value),
                 Source=["Mann1998"],
-                Cognacy=" ".join([str(x) for x in cogidxs])
+                Cognacy=" ".join([str(x) for x in cogidxs]),
             )
             for i, cogid in zip(cogidxs, cogids):
                 args.writer.add_cognate(
